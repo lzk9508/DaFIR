@@ -1,6 +1,6 @@
 # DaFIR: Distortion-aware Representation Learning for Fisheye Image Rectification
 
-![1683018123723](https://user-images.githubusercontent.com/91788329/235624953-a1f08090-7d9c-404d-ae27-30d80d328e2b.png)
+![1683021188130](https://user-images.githubusercontent.com/91788329/235635829-b7536568-6723-4059-9ffd-56a6e3ee7839.png)
 
 ## Inference 
 1. The pretrained model can be download from [Baidu Cloud](https://pan.baidu.com/s/1J97k1TSNyMicowRLZ7KJvw?pwd=ecmf)(Extraction code: ecmf). Put the model to `$ROOT/test/save/net/`.
