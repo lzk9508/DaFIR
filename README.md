@@ -17,6 +17,9 @@ Below is a detailed description of this project.
 8. Pillow 9.4.0
 9. timm 0.6.13
 
+## Source Data
+1. In this project, we synthesize a fisheye image from a group of distortion parameters and a source image without distortion.
+
 ## Inference 
 1. The pretrained model can be download from [Baidu Cloud](https://pan.baidu.com/s/1J97k1TSNyMicowRLZ7KJvw?pwd=ecmf)(Extraction code: ecmf). Put the model to `$ROOT/test/save/net/`.
 2. Put the distorted images in `$ROOT/dataset/data/`.
