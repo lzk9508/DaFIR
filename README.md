@@ -19,7 +19,8 @@ Below is a detailed description of this project.
 
 ## Source Data
 1. In this project, we synthesize a fisheye image from a group of distortion parameters and a source image without distortion.
-2. The source images in the size of 256*256 can be download from
+2. The source images in the size of 256*256 can be download from [Baidu Cloud](https://pan.baidu.com/s/1M2653RTWun1vDaj1BFPF2A?pwd=gjq3) (Extraction code: gjq3 ). Download the file "picture.zip",
+extract to the fold "picture" and put it into the path /code_dafir/data_prepare/. 
 3. The path list of the above source images can be download from [Baidu Cloud](https://pan.baidu.com/s/1y1YEH4NZK51KjOfpJB8TMw?pwd=9p97) (Extraction code: 9p97 ). Download the file "img_path.txt"
 and put it into the path /code_dafir/data_prepare_ddm/ and /code_dafir/data_prepare_flow/. 
 
