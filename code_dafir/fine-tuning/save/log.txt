@@ -1,0 +1,10 @@
+Random Seed: 1234
+World Size: 2
+train: images numbers: 100000	
+train: epochs: 65
+train iters per epoch: 1562
+train total iters: 101530
+
+train: Epoch: 1	Lr: 0.00000400	
+train: Epoch: 1	bm_loss: 124.05735934
+train: Epoch: 2	Lr: 0.00003352	

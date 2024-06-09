@@ -1,0 +1,36 @@
+Random Seed: 1234
+World Size: 2
+Random Seed: 1234
+World Size: 2
+train: images numbers: 200000	
+train: epochs: 25
+train iters per epoch: 1562
+train total iters: 39050
+
+train: Epoch: 1	Lr: 0.00000400	
+Random Seed: 1234
+World Size: 2
+train: images numbers: 200000	
+train: epochs: 25
+train iters per epoch: 3125
+train total iters: 78125
+
+train: Epoch: 1	Lr: 0.00000400	
+Random Seed: 1234
+World Size: 2
+train: images numbers: 200000	
+train: epochs: 25
+train iters per epoch: 3125
+train total iters: 78125
+
+train: Epoch: 1	Lr: 0.00000400	
+Random Seed: 1234
+World Size: 2
+train: images numbers: 200000	
+train: epochs: 25
+train iters per epoch: 1562
+train total iters: 39050
+
+train: Epoch: 1	Lr: 0.00000400	
+train: Epoch: 1	bm_loss: 0.06793784
+train: Epoch: 2	Lr: 0.00008064	
