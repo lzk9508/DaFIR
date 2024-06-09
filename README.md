@@ -6,6 +6,17 @@
 1. Dear researchers and engineers, good afternoon. Due to my busy work and study schedule, the DaFIR project has only been fully open-sourced today. Thank you for your patience. 
 Below is a detailed description of this project.
 
+## Dependencies
+1. python 3.8
+2. cudnn 8.2.1
+3. pytorch 1.9.0
+4. cuda 11.2
+5. numpy 1.22.3
+6. skimage 0.20.0
+7. opencv 4.7.0
+8. Pillow 9.4.0
+9. timm 0.6.13
+
 ## Inference 
 1. The pretrained model can be download from [Baidu Cloud](https://pan.baidu.com/s/1J97k1TSNyMicowRLZ7KJvw?pwd=ecmf)(Extraction code: ecmf). Put the model to `$ROOT/test/save/net/`.
 2. Put the distorted images in `$ROOT/dataset/data/`.
