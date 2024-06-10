@@ -22,8 +22,57 @@ Below is a detailed description of this project.
 2. The source images in the size of 256*256 can be download from [Baidu Cloud](https://pan.baidu.com/s/1M2653RTWun1vDaj1BFPF2A?pwd=gjq3) (Extraction code: gjq3 ). Download the file "picture.zip",
 extract to the fold "picture" and put it into the path /code_dafir/data_prepare/. 
 3. The path list of the above source images can be download from [Baidu Cloud](https://pan.baidu.com/s/1y1YEH4NZK51KjOfpJB8TMw?pwd=9p97) (Extraction code: 9p97 ). Download the file "img_path.txt"
-and put it into the path /code_dafir/data_prepare_ddm/ and /code_dafir/data_prepare_flow/. 
+and put it into the path /code_dafir/data_prepare_ddm/ and /code_dafir/data_prepare_flow/.
 
+## Synthesize Fisheye Images and Labels
+1. Synthesize Fisheye Images and DDM (D labels) for pretraining dataset
+   ```
+   cd /code_dafir/data_prepare_ddm/
+   python get_dataset_ddm.py --index 0
+   ```
+   The index parameter can be adjust to change different source images for synthesization
+   
+2. Synthesize Fisheye Images and Pixel-wise Flow Maps for fine-tuning dataset 
+   ```
+   cd /code_dafir/data_prepare_flow/
+   python get_dataset.py --index 0
+   ```
+   The index parameter can be adjust to change different source images for synthesization
+
+## Pretraining
+1. Input Fisheye Images and Predict D Labels.
+   ```
+   cd /code_dafir/pre_training/
+   python -m torch.distributed.launch --nproc_per_node=2 --master_port 1285 main.py
+   ```
+   The parameter --master_port can be selected randomly. Use 2 GPUs for distributed trainning.
+2. After Pretraining, the model is saved in /code_dafir/pre_training/save/net/
+
+## Fine-tuning
+1. Put a Pre-traning release model into the path /code_dafir/fine-tuning/pretrain/
+2. Input Fisheye Images and Predict Pixel-wise Flow Map.
+   ```
+   cd /code_dafir/fine-tuning/
+   python -m torch.distributed.launch --nproc_per_node=2 --master_port 1285 main.py
+   ```
+   The parameter --master_port can be selected randomly. Use 2 GPUs for distributed trainning.
+3. After fine-tuning, the model is saved in /code_dafir/fine-tuning/save/net/
+
+## Testing
+1. We provide a test dataset, which is the same with the one in our paper (https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10251977).
+2. Testing the model in synthesize fisheye images
+   ```
+   cd /code_dafir/fine-tuning/
+   python test.py
+   ```
+3. Testing the model in real fisheye images
+   ```
+   cd /code_dafir/fine-tuning/
+   python test2.py
+   ```
+
+
+     
 ## Inference 
 1. The pretrained model can be download from [Baidu Cloud](https://pan.baidu.com/s/1J97k1TSNyMicowRLZ7KJvw?pwd=ecmf)(Extraction code: ecmf). Put the model to `$ROOT/test/save/net/`.
 2. Put the distorted images in `$ROOT/dataset/data/`.
