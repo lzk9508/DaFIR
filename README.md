@@ -2,7 +2,8 @@
 <p>
     <a href='https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10251977' target="_blank"><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 </p>
-![1683021188130](https://user-images.githubusercontent.com/91788329/235635829-b7536568-6723-4059-9ffd-56a6e3ee7839.png)
+
+![1](https://user-images.githubusercontent.com/91788329/235635829-b7536568-6723-4059-9ffd-56a6e3ee7839.png)
 
 ## Greetings
 1. Dear researchers and engineers, good afternoon. Due to my busy work and study schedule, the DaFIR project has only been fully open-sourced today. Thank you for your patience. 
