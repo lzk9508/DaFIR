@@ -103,7 +103,7 @@ def get_parameter_number(net):
 def main():
     parser = argparse.ArgumentParser() 
     parser.add_argument('--rec_model_path', default='./save/net/')
-    parser.add_argument('--distorrted_path', default='/data5/liaozk2/code_dafir/dataset10/test/data/')
+    parser.add_argument('--distorrted_path', default='/code_dafir/dataset3/data/')
     parser.add_argument('--index', type=int, default=2)
     opt = parser.parse_args()
 
