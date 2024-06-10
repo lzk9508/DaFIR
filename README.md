@@ -60,7 +60,7 @@ and put it into the path /code_dafir/data_prepare_ddm/ and /code_dafir/data_prep
 
 ## Testing
 1. We provide a test dataset, which is the same with the one in our paper (https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10251977). This dataset can be download from
-   [Baidu Cloud] (https://pan.baidu.com/s/1xXuCdmgrjGlwQeDIeCMFgQ?pwd=yzv7)(Extraction Code: yzv7)
+   [Baidu Cloud] (https://pan.baidu.com/s/1xXuCdmgrjGlwQeDIeCMFgQ?pwd=yzv7)(Extraction Code: yzv7). Unrap the fold dataset3 and put it into the path /code_dafir/.
 2. Testing the model in synthesize fisheye images
    ```
    cd /code_dafir/fine-tuning/
