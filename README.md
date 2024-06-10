@@ -71,6 +71,21 @@ and put it into the path /code_dafir/data_prepare_ddm/ and /code_dafir/data_prep
    cd /code_dafir/fine-tuning/
    python test2.py
    ```
+
+## Citation
+
+If you find this code useful for your research, please use the following BibTeX entry.
+
+  ```
+  @article{liao2023dafir,
+    title={DaFIR: Distortion-aware Representation Learning for Fisheye Image Rectification},
+    author={Liao, Zhaokang and Zhou, Wengang and Li, Houqiang},
+    journal={IEEE Transactions on Circuits and Systems for Video Technology},
+    year={2023},
+    publisher={IEEE}
+  }
+  ```
+
      
 ## Evaluation 
 1. Evaluate the model with metric PSNR and SSIM
