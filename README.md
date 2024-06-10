@@ -73,13 +73,8 @@ and put it into the path /code_dafir/data_prepare_ddm/ and /code_dafir/data_prep
 
 
      
-## Inference 
-1. The pretrained model can be download from [Baidu Cloud](https://pan.baidu.com/s/1J97k1TSNyMicowRLZ7KJvw?pwd=ecmf)(Extraction code: ecmf). Put the model to `$ROOT/test/save/net/`.
-2. Put the distorted images in `$ROOT/dataset/data/`.
-3. Distortion rectification. The rectified images are saved in `$ROOT/test/test_result/` by default.
-    ```
-    python test.py
-    ```
+## Evaluation 
+
 
 ## Acknowledgement
 The codes are largely based on [PCN](https://github.com/uof1745-cmd/PCN) and [MAE](https://github.com/facebookresearch/mae). Thanks for their wonderful works.
