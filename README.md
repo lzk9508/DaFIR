@@ -71,11 +71,13 @@ and put it into the path /code_dafir/data_prepare_ddm/ and /code_dafir/data_prep
    cd /code_dafir/fine-tuning/
    python test2.py
    ```
-
-
      
 ## Evaluation 
-
+1. Evaluate the model with metric PSNR and SSIM
+   ```
+   cd /code_dafir/core/
+   python compare.py
+   ```
 
 ## Acknowledgement
 The codes are largely based on [PCN](https://github.com/uof1745-cmd/PCN) and [MAE](https://github.com/facebookresearch/mae). Thanks for their wonderful works.
