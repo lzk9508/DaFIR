@@ -10,6 +10,9 @@
 
 Any questions or discussions are welcomed!
 
+## Contact details updated
+Since I have graduated from USTC. Please contact me on a new email address for faster response：liaozhaokang.lzk@antgroup.com
+
 ## Greetings
 1. Dear researchers and engineers, good afternoon. Due to my busy work and study schedule, the DaFIR project has only been fully open-sourced today. Thank you for your patience. 
 Below is a detailed description of this project.
@@ -103,7 +106,7 @@ If you find this code useful for your research, please use the following BibTeX 
    ```
 
 ## Contact us 
-  Any questions please contact me in lzk9508@mail.ustc.edu.cn
+  Any questions please contact me in lzk9508@mail.ustc.edu.cn. 
 
 ## Acknowledgement
 The codes are largely based on [PCN](https://github.com/uof1745-cmd/PCN) and [MAE](https://github.com/facebookresearch/mae). Thanks for their wonderful works.
